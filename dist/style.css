@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gameboard {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-auto-flow: initial;
+}
+
+.square {
+    font-size: 30px;
+    border: 1px solid lightgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ship {
+    border: 2px solid red;
+}
